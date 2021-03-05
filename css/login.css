@@ -1,0 +1,128 @@
+/*
+color: #f4a713; yellow
+color: #f05f1e; orange
+ color: #1398dd; blue
+*/
+body{
+    margin: 0%;
+    padding:0 ;
+    background-size:cover;
+    background-position: center;
+    font-family:sans-serif ;
+}
+.loginbox{
+    height:420px ;
+    width:320px ;
+    background: #00496f;
+    color:rgb(240, 232, 232);
+    left: 50%;
+    top:50%;
+    position: absolute;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    padding:70px 30px ;
+}
+.raj{
+    height:100px ;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left:110px;
+    top: -50px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight:bold ;
+}
+h1{
+    margin: 0;
+    padding: 0 0 22px;
+    text-align: center;
+    font-size: 23px;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: #ff7f07;
+}
+.loginbox input[type="submit"]
+{
+    border:none;
+    outline:none;
+    background: #ffffff;
+    color: rgb(8, 5, 5);
+    border-radius: 20px;
+    font-size: 20px;
+}
+.loginbox a {
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(245, 90, 18);
+}
+.loginbox a:hover{
+    color: #ff7f07;
+}
+@media(max-width:768px){.loginbox{
+    height: auto;
+    box-sizing: border-box;
+    padding: 10%;
+    
+}
+.raj{width: 30%;
+height: 20%;
+position: absolute;
+border-radius: 50%;
+left:114px;
+top:-50px;
+}
+}
+@media(min-width:1024px){.loginbox
+{
+    height:auto;
+    
+}
+
+}
+@media(max-width:468px){.loginbox{
+
+    height: auto;
+    box-sizing: border-box;
+    
+}
+.raj{width: 20%;
+height: 20%;
+position: absolute;
+border-radius: 50%;
+left:110px;
+top:-50px;}
+}
+@media(min-width:769px)and (max-width:1023px){
+    .loginbox{
+        height: auto;
+        box-sizing: border-box;
+        
+    }
+    .raj{
+        width: 30%;
+        height: 22%;
+        position: absolute;
+        border-radius: 50%;
+        left:112px;
+        top:-60px;
+    }
+}
