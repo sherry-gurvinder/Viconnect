@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.full-height {
+  height: 100%;
+  background:white;
+}
+
+#button-display-div
+{
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 35%;
+    max-width: 35%;
+    background: #f4a713;
+    padding: 10px;
+  
+}
+body {
+    font-family: system-ui;
+  
+    color: white;
+   min-height: 100%;
+    margin:0px
+  }
+  .wrapper
+  {
+    grid-column: col-start / span 12;
+    display:grid;
+  }
+  .navbar
+  {
+    background:#1398dd;
+  }
+  .wrapper .nav > img
+  {
+    width:5%;
+  }
+  .container {  
+      display: grid;  
+      grid-template-columns: 1fr 1fr;  
+      object-fit: cover;  
+    height:100%
+      /*grid-template-rows: 50px 50px;*/  
+  }
+  .container > div > img {  
+      width: 100%;  
+      height: 100%;  
+      object-fit: cover;  
+  }
+  .header,
+  .footer {
+    background-color: #1398dd;
+    position: relative;
+  }
+  
+  .header {
+      grid-area: header;
+    }
+  
+    .footer {
+      height: 50px;
+     
+    }
+  .content {
+      grid-area: content;
+    }
+    button#login {
+      background: #0000004a;
+      color: white;
+      font-family: auto;
+      padding: 10px;margin: 5px;
+  }
+  button#signup {
+    background: #0000004a;
+    color: white;
+    font-family: auto;
+    padding: 10px;
+}
+
+button#login:hover {
+  background: #1398dd;
+  color: white;
+  font-family: auto;
+  padding: 10px;margin: 5px;
+}
+button#signup:hover {
+background: #1398dd;
+color: white;
+font-family: auto;
+padding: 10px;
+}
+#home-texture-div
+{
+  background-image: url("https://wallpaperaccess.com/full/2150811.jpg");
+  width: 100%;  
+      height: 100%;  
+      
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+#viconnect
+{
+  
+  font-size: 26px;
+  color: #f5a012;
+  animation-name: logotext;
+  animation-duration: 10s;
+  vertical-align:top;
+  font-weight: bold;
+  font-weight: bold;
+    position: absolute;
+    padding-top: 1%;
+}
+#meetup
+{
+  text-align: center;color: black;font-weight: bold;font-size: 28px;
+  animation-name: meettext;
+  animation-duration: 10s;
+ 
+}
+@keyframes meettext {
+ 
+
+  0%   {color: #f4a713;}
+  25%  {color: #f05f1e;}
+  50%  {color: white}
+  100% {color: black;}
+
+}
