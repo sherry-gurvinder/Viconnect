@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="loginbox">
-        <img src="images/phone-icon.png" class="raj">
+        <img src="image/phone-icon.png" class="raj">
         <h1>Login</h1>
         <form>
             <span style="color: red;" id="usererror"></span>
@@ -25,11 +25,45 @@
     </div>
     
 </body>
+<script>
+   
+    function validate()
+    {
+        var user = document.getElementById("name").value;
+        var password = document.getElementById("pass").value;
+        var flag = 0;
+        debugger;
+        if (user == "")
+        {
+            document.getElementById("usererror").innerHTML = "User Name can not be blank";
+            flag = 0;
+            
+        }
+        else
+        {
+            document.getElementById("usererror").innerHTML = "";
+            flag = 1;
+            
+        }
+        if(password == "")
+        {
+            document.getElementById("passerror").innerHTML = "Password can not be blank";
+            flag = 0
+        }
+        else
+        {
+            document.getElementById("passerror").innerHTML = "";
+            flag = 1;
+            
+        }
 
+        if(flag == 0)
+        {
+            return false;
+        }
+      
+    }
 
-       
-    
-
-    
+</script>
 
 </html>
