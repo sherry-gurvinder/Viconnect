@@ -1,0 +1,67 @@
+body{
+    /*background-color:  rgb(255, 149, 50);
+   // background-image: "image/bgcss.png";*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.error-msg
+{
+    color:red;
+}
+#CreateHeading
+{
+    text-align: center;
+    font-size: 100%;
+    margin: 0;
+    margin-bottom: 1px;
+    font-size: 37px;
+    font-variant: all-petite-caps;
+    background: black;
+    
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000085;
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+}
+   table, td, th {
+        text-align: left;
+        vertical-align:center;
+        width: 30%;
+      
+     }
+     input{
+         width: 100%;
+         padding: 0px;
+         height: 30%;
+     }
+     .signup-cointainer {
+        width: 100%;
+        height: 100%;
+    }
+     footer {
+        background-color: darkslategray !important;
+        position: relative;
+        height: 8% !important;
+    }
+    .signup-form {
+        text-align: center;
+        min-height: 82%;
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5b072a8af79392cac386efed/1527333458856-NCQ8I7YLPY3ID7IIMTCY/ke17ZwdGBToddI8pDm48kORnDOMlIpH697xXdtOS27AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhqdovPBuWXwPzTaju9P1na9C5o1E1Bl5U9JMa9uZgApCjLISwBs8eEdxAxTptZAUg/crest-dark-background.png?format=2500w');
+    }
+    header
+    {
+        height: 10% !important;
+        background-color: darkslategray;
+    }
+    
