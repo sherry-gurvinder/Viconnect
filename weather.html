@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Weather</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="weather.css">
+  
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Vi</em> Connect</a>
+    </div>
+    <a href="#menu" id="hamnav" class="menu-link" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Contact Weather</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div style="width: 100%;">
+          <div class="section-heading">
+            <h2>Weather Information</h2>
+        
+            <form  class="change-location my-4 text-center text-success font-weight-bold">
+                <input type="text" name="city"  placeholder="Search" class="form-control p-4" autofocus>
+            </form>
+            <div class="card shadow-lg rounded d-none">
+                <img src="img/day.svg" class="time card-img-top">
+                <div class="icon bg-light mx-auto text-center">
+                    <img src="img/icons/1.svg" alt="">
+                </div>
+                <div class="text-muted text-uppercase text-center details">
+                    <h5 class="my-3">
+                        City Name
+                    </h5>
+                    <div class="my-3">Weather Conditon</div>
+                    <div class="display-4 my-4">
+                        <span>temp</span>
+                        <span>&deg;C</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+ 
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div >
+          <p><i class="fa fa-copyright"></i> Copyright 2021 by Viconnect</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="app.js"></script>
+  <script>
+     
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+   
+  } else {
+    x.style.display = "block";
+    
+  }
+}
+  </script>
+</body>
+</html>
+  
