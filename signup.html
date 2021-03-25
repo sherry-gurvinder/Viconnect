@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="signup.css">
+    <script  src="signup.js"></script>
+  
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Vi</em> Connect</a>
+    </div>
+    <a href="#menu" id="hamnav" class="menu-link" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Contact Weather</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div style="width: 100%;">
+          <div class="section-heading">
+            <h2>Sign Up</h2>
+          </div>
+        </div>
+        <div style="width: 100%;" >
+        
+        
+                    
+          <form id="contact">
+            <div class="row">
+              <div style="width: 99%;">
+                  <fieldset>
+                    <span class="error-msg" id="fname-msg"></span>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" >
+                    
+                  </fieldset>
+                </div>
+                <div style="width: 99%;">
+                  <fieldset>
+                    <span class="error-msg" id="lname-msg"></span>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" >
+                    
+                  </fieldset>
+                </div>
+              <div style="width: 99%;">
+                <fieldset>
+                    <span class="error-msg" id="email-msg"></span>
+                    <input type="email" name="email" id="email"placeholder="Email Address" >
+                   
+                </fieldset>
+              </div>
+              <div style="width: 99%;">
+                <fieldset>
+                    <span class="error-msg" id="MOBILE-msg"></span>
+                    <input type="number" name="number" id="MOBILE" placeholder="Contact number" >
+                   
+                </fieldset>
+              </div>
+              <div style="width: 99%;">
+                <fieldset>
+                    <span class="error-msg" id="Password-msg"></span>
+                    <input type="password" name="Password" id="Password"placeholder="Password" >
+               
+                </fieldset>
+              </div>
+
+              <div style="width: 99%;">
+                <fieldset>
+                    <span class="error-msg" id="c-password-msg"></span>
+                    <input type="password" name="c-password" id="c-password" placeholder="Confirm your Password" >
+                
+                </fieldset>
+              </div>
+
+              <div style="width: 99%;">
+                <fieldset style="text-align: center;">
+                    <button type="submit" id="form-submit" class="button" onclick="return validate()">Create Account</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div >
+          <p><i class="fa fa-copyright"></i> Copyright 2021 by Viconnect</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+     
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+   
+  } else {
+    x.style.display = "block";
+    
+  }
+}
+  </script>
+</body>
+</html>
+  

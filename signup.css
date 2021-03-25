@@ -1,0 +1,34 @@
+body{
+    /*background-color:  rgb(255, 149, 50);
+   // background-image: "image/bgcss.png";*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.error-msg
+{
+    color:#f39c12;
+}
+     input{
+         width: 100%;
+         padding: 0px;
+         height: 10%;
+     }
+     .signup-cointainer {
+        width: 100%;
+        height: 100%;
+    }
+    ::placeholder {
+        padding-left: 18px;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        padding-left: 18px;}
+      ::-moz-placeholder { /* Firefox 19+ */
+        padding-left: 18px;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        padding-left: 18px;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        padding-left: 18px;
+      }
