@@ -311,7 +311,18 @@ a.menu-link { display: none; }
   overflow: hidden;
   margin-bottom: -7px;
 }
-
+.slideimg
+{
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.slideimg::-webkit-media-controls {
+  display: none !important;
+}
 #bg-img {
     min-width: 100%;
     min-height: 100vh;

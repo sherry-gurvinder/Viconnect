@@ -11,6 +11,10 @@
     <title>Home page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   
   </head>
 
@@ -33,10 +37,15 @@
       </ul>
     </nav>
   </header>
-
+  
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-      <img id="bg-img"src="https://wehco.media.clients.ellingtoncms.com/img/photos/2019/11/12/Opinion_Newspaper_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d">
+    <div class="imagesliderauto">
+      <div><img class="slideimg"  src="img/slide1.jpg"></div>
+      <div><img class="slideimg" src="img/slide2.jpg" ></div>
+      <div><img class="slideimg" src="img/slide3.jpg" ></div>
+    </div>
+      
       
 
       <div class="img-overlay header-text">
@@ -67,7 +76,7 @@
       </div>
     </div>
   </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
      
   function myFunction() {
@@ -80,6 +89,22 @@
       
     }
   }
+
+
+  $(document).ready(function(){
+        $('.slider').bxSlider();
+      $('.imageslider').bxSlider({
+          minSlider:6,
+          maxSlier:6
+      });
+      $('.imagesliderauto').bxSlider({
+        auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+  slideWidth: true
+      });
+    });
     </script>
   </body>
   </html>
