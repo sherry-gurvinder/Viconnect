@@ -1,4 +1,4 @@
-var apiKey ='jCLPUDFqHDZV7369qCF3gfHGutmpcVKG';
+var apiKey ='g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi';
 var weatherURI ='https://dataservice.accuweather.com/currentconditions/v1/';
 var cityURI ='https://dataservice.accuweather.com/locations/v1/cities/search';
 

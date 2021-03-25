@@ -28,6 +28,7 @@
       <ul class="main-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="weather.html">Weather</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       
       </ul>
@@ -42,7 +43,7 @@
             <h2>Weather Information</h2>
         
             <form  style="display: inline-flex;" class="change-location my-4 text-center text-success font-weight-bold">
-                <input type="text" name="city"  placeholder="Enter city name" class="form-control p-4" autofocus>
+                <input type="text" name="city" id="city" placeholder="Enter city name" class="form-control p-4" autofocus>
                 <input type="image" src="img/search.png" alt="Submit" style="margin-left: 10px;
                 width: 28%;
                 height: 50%;
@@ -90,6 +91,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="script/weather.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
      
 function myFunction() {
@@ -102,6 +106,29 @@ function myFunction() {
     
   }
 }
+
+var url = "http://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi";
+  
+    var cities=[];
+
+    $( function() {
+    fetch('http://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi')
+    .then(response => response.json())
+    .then(data => {
+      for(var i = 0; i < data.length; i++) {
+          var obj = data[i];
+          cities[i]=obj.LocalizedName;
+          //console.log(obj.LocalizedName);
+          //console.log(cities[i]);
+  
+      }
+      }
+    );
+    console.log(cities);
+    $( "#city" ).autocomplete({
+      source: cities
+    });
+});
   </script>
 </body>
 </html>
