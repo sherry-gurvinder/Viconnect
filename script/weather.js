@@ -50,6 +50,7 @@ function getWeatherInfo(key)
 
 function updateUIPanel(cityData,weatherData)
 	{
+      
     console.log(cityData,weatherData);
 	details.innerHTML= '<h5 class="my-3">'+cityData.EnglishName+' , '+cityData.Country.EnglishName+'</h5> <div class="my-3">'+weatherData.WeatherText+'</div><div class="display-4 my-4"><span>'+weatherData.Temperature.Metric.Value+'</span><span>&deg;C</span></div>';
 	
@@ -111,6 +112,7 @@ function updateColor(time){
             console.log('night-not here');
         }
     }
+  
 	}
 	
 });
