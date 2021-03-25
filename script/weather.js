@@ -9,7 +9,7 @@ var card = document.querySelector('.card');
 var details =document.querySelector('.details');
 var timeimg = document.querySelector('img.time');
 var icon = document.querySelector('.icon img');
-
+footer = document.querySelector('footer');
 
 $(document).ready(function(){
 	input.addEventListener('submit',(e)=>{
@@ -19,8 +19,8 @@ $(document).ready(function(){
     localStorage.setItem('city',city)
     input.reset()
     input.city.blur()
-	
-	updateCityInfo(city);
+    updateCityInfo(city);
+    footer.classList.remove('footerbottom');
 });
 	
 function updateCityInfo (city)
