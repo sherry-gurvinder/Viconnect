@@ -107,12 +107,12 @@ function myFunction() {
   }
 }
 
-var url = "http://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi";
+
   
     var cities=[];
 
     $( function() {
-    fetch('http://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi')
+    fetch('https://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi')
     .then(response => response.json())
     .then(data => {
       for(var i = 0; i < data.length; i++) {
