@@ -81,36 +81,13 @@ function updateColor(time){
         timeSrc='img/day.svg';
         timeimg.setAttribute('src', timeSrc);
         document.body.style.backgroundColor = "#e6ecf6";
-        if(h1text.classList.contains('text-light'))
-        {
-            console.log('day-here')
-            h1text.classList.remove('text-light');
-            details.classList.remove('text-light');
-            h1text.classList.add('text-dark');
-            details.classList.add('text-muted');
-            card.style.backgroundColor= "white";
-        }
-        else
-        {
-            console.log('day-not here');
-        }
+        
     }
     else{
         timeSrc='img/night.svg';
         timeimg.setAttribute('src', timeSrc);
         document.body.style.backgroundColor = "#0e2432";
-        if(h1text.classList.contains('text-dark'))
-        {
-            console.log('night-here');
-            h1text.classList.remove('text-dark');
-            details.classList.remove('text-muted');
-            h1text.classList.add('text-light');
-            details.classList.add('text-light');
-            card.style.backgroundColor= "#081d27";
-        }
-        else{
-            console.log('night-not here');
-        }
+       
     }
   
 	}
