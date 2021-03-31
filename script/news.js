@@ -1,5 +1,5 @@
 const key = "50a2ce5640bb4470975dac3abda416d7"; //Apikey generated from news api
-const url = `https://newsapi.org/v2/top-headlines?country=ca&category=business&apiKey=50a2ce5640bb4470975dac3abda416d7`;
+const url = `http://newsapi.org/v2/top-headlines?country=ca&category=business&apiKey=50a2ce5640bb4470975dac3abda416d7`;
 
 const receivedNews = (newsdata) => {
   const articlesDiv = document.querySelector(".articles");
