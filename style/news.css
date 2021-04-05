@@ -10,6 +10,7 @@ body{
 }
 
 .articles{
+    width: 100%;
     text-align: center;
     color: white;
 }
@@ -17,4 +18,17 @@ body{
 img{
     width: 800px;
     height: 300px;
+}
+
+@media only screen and (max-width: 360px) {
+    .news{
+        margin: auto;
+        text-align: center;
+    }
+
+    img{
+        margin: auto;
+        width: auto;
+        height: 200px;
+    }
 }
