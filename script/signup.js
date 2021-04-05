@@ -11,7 +11,7 @@ function validate()
     var MOBILE = document.getElementById("MOBILE");
     var ConfirmPassport = document.getElementById("c-password");
     flag = 0;
-   
+    debugger;
     
     
    
@@ -48,7 +48,7 @@ function validate()
     }
     else
     {
-        if(IsEMAILVALID(email.value))
+        if(IsEMAILVALID())
         {
             document.getElementById("email-msg").innerHTML = "";
             flag = 1;
@@ -106,25 +106,56 @@ function validate()
         }
         
     }
+   
     if (flag == 0)
     {
         return false;
     }
-
+    else
+    {
+        store();
+    }
     
    
 } 
-
-function IsEMAILVALID(email) {
-    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-
-        if (reg.test(email.value) == false) 
-        {
-            
-            return false;
-        }
+function store(){
+  
+        //var inputUsername= $("#username").val();
+       var inputEmail= $("#email").val();
+       var inputPassword= $("#Password").val();
        
-        return true;
+    var retrievedObject = localStorage.getItem(inputEmail);
+    
+    if(retrievedObject == null)
+    {
+       
+       
+       var obj =
+       {
+          //'username' : inputUsername,
+          'email' : inputEmail,
+          'password' : inputPassword
+       };
+       
+       localStorage.setItem(inputEmail, JSON.stringify(obj));
+       }
+       else{ alert("Please enter new email ID");}
+      }
 
-};
+function IsEMAILVALID() {
+    alert("email.com")
+
+    var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+
+    if (pattern.test($("#email").val())) {
+        return true;
+        
+       
+    } else {
+       
+        return false;
+    }
+
+}
+
 
