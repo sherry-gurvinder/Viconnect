@@ -322,4 +322,16 @@ a.menu-link { display: none; }
     color: #f5a425;
     border: none;
 }
+.main-nav li:hover a,
+.main-nav li.active a {
+    border: 2px solid #f5a425;
+}
+
+@media (max-width: 950px) {
+  .main-nav li:hover a,
+  .main-nav li.active a {
+    border: 2px solid transparent;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+  }
+}
     
