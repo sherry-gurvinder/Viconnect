@@ -33,9 +33,10 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="weather.html">Weather</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="cvoid19.html">Covid19</a></li>
+        <li><a href="cvoid19.html">Covid-19</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
       
       </ul>
     </nav>
@@ -74,7 +75,7 @@
     <div class="news-form">
       <!-- <form> -->
         <input type="text" id="email" name="email" placeholder="Enter your email" />
-        <button class="btn" onclick="validate();">Join</button>
+        <button class="btn" onclick="sendEmail();">Join</button>
       <!-- </form> -->
     </div>
   </section>
@@ -89,6 +90,45 @@
     </div>
   </footer>
 
+  <script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+	function sendEmail() {
+
+    var email = document.getElementById("email").value;
+    if(email == ""){
+      alert("Please enter your email");
+    }else{
+
+      var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+
+      if (pattern.test($("#email").val()))
+      {
+        
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "viconnect123@gmail.com",
+          Password: "Lambton@321",
+          To: email,
+          From: "viconnect123@gmail.com",
+          Subject: "You are subscribed to our newsletter",
+          Body: "<h1>You are subscribed to our newsletter </h1>",
+        })
+          .then(function (message) {
+          alert("You are subscribed to our newsletter")
+          });
+
+      } 
+      else
+      {  
+        document.getElementById("email-msg").innerHTML = "Invalid Email Address";
+        $("#email").css("border", "solid #f39c12");
+      } 
+    }
+	}
+</script>
 <script>
      
   function myFunction() {
@@ -102,14 +142,7 @@
     }
   }
 
-  function validate(){
-    var email = document.getElementById("email").value;
-    if(email == ""){
-      alert("Please enter your email");
-    }else{
-      alert("You are subscribed to our newsletter.");
-    }
-  }
+  
 
 
   $(document).ready(function(){
@@ -125,6 +158,11 @@
   pager: true,
   slideWidth: true
       });
+
+
+
+
+
     });
     </script>
   </body>
