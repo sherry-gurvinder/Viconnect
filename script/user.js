@@ -6,15 +6,15 @@ var settings = {
   
   $.ajax(settings).done(function (response) {
 
-    debugger;
+   
     console.log(response);
     response.data.forEach(data => {
 
         console.log(data['name']);
 
        
-        $(".wrapper").prepend("<div class='box'>"+data['name']+'<p><input class="email" type="email" value='+data['email']+'></p>'+
-        '<input type="button" class="sendemail" value="Send Email"  />'+ '</div>');
+        $(".wrapper").prepend("<div class='box'>"+data['name']+'<form class="emailform" onsubmit=sendemail("'+data['email']+'")><p>Start Video call by sending link to user email</p><p><input class="email" type="email" id='+data['email']+' value='+data['email']+'></p>'+
+        '<input type="submit" class="sendemail" value="Send Email"  /></form/>'+ '</div>');
         
     });
   
@@ -22,13 +22,13 @@ var settings = {
 
 
 
-$('.sendemail').click(function()
-{
-
-  alert("sendemail");
-  
-  var email = document.getElementsByClassName("email");
+function sendemail(emailid)
+{ 
+  debugger;
+  var email = document.getElementById(emailid);
   alert(email.value);
+  
+
   if(email.value == "")
 
     {
@@ -53,9 +53,8 @@ $('.sendemail').click(function()
         
         
     }  
+  }
 
-
-})
 
 function IsEMAILVALID() {
   alert("email.com")
