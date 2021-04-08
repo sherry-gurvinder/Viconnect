@@ -2,7 +2,7 @@
 function validate()
 {
     
-    
+   
     var fname = document.getElementById("fname");
     var lname = document.getElementById("lname");
    
@@ -138,16 +138,20 @@ function store(){
        };
        
        localStorage.setItem(inputEmail, JSON.stringify(obj));
+       alert("Account has been created!")
+       window.location.href = "login.html";
        }
-       else{ alert("Please enter new email ID");}
+       else{ alert("Email already Exist");}
       }
 
 function IsEMAILVALID() {
-    alert("email.com")
+   
 
     var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 
     if (pattern.test($("#email").val())) {
+
+
         return true;
         
        

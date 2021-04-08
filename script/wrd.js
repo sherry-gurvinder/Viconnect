@@ -67,7 +67,7 @@ function getStore(){
    debugger;
   var retrievedObject = localStorage.getItem(inputEmail);
   var obj = JSON.parse(retrievedObject);
-  alert(obj);
+
   if(obj!=null)
     {
     if(obj.email == inputEmail && obj.password == inputPassword)
@@ -98,6 +98,8 @@ function getStore(){
     var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 
     if (pattern.test($("#email").val())) {
+
+        
         return true;
         
        
