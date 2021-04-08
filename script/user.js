@@ -64,7 +64,7 @@ function sendemail(emailid)
         Password: "Lambton@321",
         To: email,
         From: "viconnect123@gmail.com",
-        Subject: "Sending Email using javascript",
+        Subject: "Video call starting",
         Body: $('#emailTemplate').html(),
       })
         .then(function (message) {
