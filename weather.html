@@ -111,16 +111,13 @@ function myFunction() {
   
     var cities=[];
 
-    $( function() {
+    $(function() {
     fetch('https://dataservice.accuweather.com/locations/v1/topcities/100?apikey=g4AScxxWnkqju7tWSD5kCHP9V7VBsOfi')
     .then(response => response.json())
     .then(data => {
       for(var i = 0; i < data.length; i++) {
           var obj = data[i];
           cities[i]=obj.LocalizedName;
-          //console.log(obj.LocalizedName);
-          //console.log(cities[i]);
-  
       }
       }
     );
