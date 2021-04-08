@@ -62,7 +62,7 @@ function sendemail(emailid)
         Host: "smtp.gmail.com",
         Username: "viconnect123@gmail.com",
         Password: "Lambton@321",
-        To: 'harvinderrajpura2@gmail.com',
+        To: email,
         From: "viconnect123@gmail.com",
         Subject: "Sending Email using javascript",
         Body: $('#emailTemplate').html(),
