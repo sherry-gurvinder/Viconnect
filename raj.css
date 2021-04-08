@@ -24,12 +24,12 @@ body {
 .rs {
     width: 20%;
     text-align: center;
-    background: #bb0707;
+    background: #f39c12;
     position: relative;
 }
 .rs:after {
     right: -16%;
-    border-left: 20px solid #bb1f1f;
+    border-left: 20px solid #f39c12;
     border-top: 33px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 33px solid transparent;
