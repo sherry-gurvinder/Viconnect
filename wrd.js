@@ -1,8 +1,7 @@
 
 function validate()
 {
-   alert("hello");
-   debugger
+
     var email = $("#email").val();
     var pass = $("#password").val();
     flag = 0;
@@ -73,7 +72,7 @@ function getStore(){
     {
     if(obj.email == inputEmail && obj.password == inputPassword)
     { 
-        alert("Logged IN")
+        
         return true;
     }
     else

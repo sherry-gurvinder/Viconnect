@@ -13,8 +13,8 @@ var settings = {
         console.log(data['name']);
 
        
-        $(".wrapper").prepend("<div class='box'>"+data['name']+'<form class="emailform" onsubmit=sendemail("'+data['email']+'")><p>Start Video call by sending link to user email</p><p><input class="email" type="email" id='+data['email']+' value='+data['email']+'></p>'+
-        '<input type="submit" class="sendemail" value="Send Email"  /></form/>'+ '</div>');
+        $(".wrapper").prepend("<div class='box'>"+data['name']+'<form class="emailform" )><p><h4>Start Video call by sending link to user email</h4></p><p><input class="email" style="color:black" type="email" id='+data['email']+' value='+data['email']+'></p>'+
+        '<input type="button" class="sendemail" value="Send Email" onclick=sendemail("'+data['email']+'")  /></form/>'+ '</div>');
         
     });
   
@@ -26,7 +26,8 @@ function sendemail(emailid)
 { 
   debugger;
   var email = document.getElementById(emailid);
-  alert(email.value);
+  email = email.value;
+  alert(email);
   
 
   if(email.value == "")
@@ -39,7 +40,7 @@ function sendemail(emailid)
     }
     else
     {
-        if(IsEMAILVALID())
+        if(IsEMAILVALID(email))
         {
             document.getElementsByClassName("email").innerHTML = "";
             flag = 1;
@@ -53,15 +54,33 @@ function sendemail(emailid)
         
         
     }  
+
+    if(flag==1)
+    {
+       alert("sendemail")
+       Email.send({
+        Host: "smtp.gmail.com",
+        Username: "viconnect123@gmail.com",
+        Password: "Lambton@321",
+        To: 'harvinderrajpura2@gmail.com',
+        From: "viconnect123@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: $('#emailTemplate').html(),
+      })
+        .then(function (message) {
+        alert("mail sent successfully")
+        });
+      
+    }
   }
 
 
-function IsEMAILVALID() {
+function IsEMAILVALID(email) {
   alert("email.com")
 
   var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 
-  if (pattern.test($("#email").val())) {
+  if (pattern.test(email)) {
       return true;
       
      

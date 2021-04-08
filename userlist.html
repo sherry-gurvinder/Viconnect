@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="style/userlist.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="script/user.js"></script>
-  
+    <style>
+      input.sendemail {
+    background: #ef8200 !important;
+    color: black;
+}
+    </style>
   </head>
 
 <body>
@@ -48,7 +53,12 @@
             <div style="width: 100%;">
               <div class="section-heading">
                 <h2 style="margin-bottom: 0px;">User List</h2>
-                
+                <div style="color:red;width:200px;height:500px;display: none;" id="emailTemplate">
+                  <p>Click on below link to start video </p>
+                      
+                   <a href="https://stackblitz.com/edit/js-c2dsdb?file=index.html">Start Video</a>     
+                  </td>
+                  </div>
               </div>
             </div>
            
