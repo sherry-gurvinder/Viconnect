@@ -24,10 +24,10 @@ var settings = {
 
 function sendemail(emailid)
 { 
-  debugger;
+
   var email = document.getElementById(emailid);
   email = email.value;
-  alert(email);
+ 
   
 
   if(email.value == "")
@@ -57,7 +57,7 @@ function sendemail(emailid)
 
     if(flag==1)
     {
-       alert("sendemail")
+       
        Email.send({
         Host: "smtp.gmail.com",
         Username: "viconnect123@gmail.com",
@@ -77,7 +77,7 @@ function sendemail(emailid)
 
 
 function IsEMAILVALID(email) {
-  alert("email.com")
+  
 
   var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 
