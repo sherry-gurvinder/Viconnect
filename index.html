@@ -66,9 +66,17 @@
       </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
+  </section>
 
-
- 
+   <!-- NEWSLETTER SECTION -->
+   <section class="newsletter">
+    <h2>Join our newsletter for updates...</h2>
+    <div class="news-form">
+      <!-- <form> -->
+        <input type="text" id="email" name="email" placeholder="Enter your email" />
+        <button class="btn" onclick="validate();">Join</button>
+      <!-- </form> -->
+    </div>
   </section>
 
   <footer>
@@ -91,6 +99,15 @@
     } else {
       x.style.display = "block";
       
+    }
+  }
+
+  function validate(){
+    var email = document.getElementById("email").value;
+    if(email == ""){
+      alert("Please enter your email");
+    }else{
+      alert("You are subscribed to our newsletter.");
     }
   }
 

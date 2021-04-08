@@ -378,6 +378,37 @@ a.menu-link { display: none; }
   font-weight: 900;
 }
 
+/* NEWSLETTER */
+
+.newsletter {
+  padding: 50px 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: rgba(22,34,57,0.95);
+  color: white;
+}
+
+.newsletter input[type="text"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  width: 70px;
+  background-color: #f5a425;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1180px) {
 
   .main-banner .caption h6 {
