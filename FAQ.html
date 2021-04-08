@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"    rel = "stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"    rel = "stylesheet"> 
+    <link rel="stylesheet" href="faq.css">   
+  
+    <script>
+        $(document).ready(function(){
+        $("#accordion").accordion({
+        event: "mouseover",
+        collapsible: true
+    });
+});
+</script>
+    <title>FAQ Page</title>
+</head>
+<body>
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Vi</em> Connect</a>
+    </div>
+    <a href="#menu" id="hamnav" class="menu-link" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Contact Weather</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="news.html">NEWS</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div style="width: 100%;">
+          <div class="section-heading">
+            <h2>FAQ</h2>
+          </div>
+        </div>
+        <div style="width: 100%;" >            
+          <form id="contact">
+            <div class="row">
+              <div style="width: 99%;">
+                  <fieldset>
+                    <div id="accordion">
+                      <h3 id="qu">What is VI CONNECT?</h3>
+                      <div id="ans">
+                        VI Connect is a video call application ,along with the video call you can check weather ,latest news. One can search their destination with the help of map.
+                      </div>
+                      <h3 id="qu">How it works?</h3>
+                      <div id="ans">
+                        To make a video call you have to create a link and then share that link with your friends.
+                      </div>
+                      <h3 id="qu">What are the benefits of VI CONNECT?</h3>
+                      <div id="ans">
+                        <ul>
+             
+                          <li>It's free.Providing comfort for consumers</li>
+                          <li>It allows you to do more in less time.Therefore you can Saving time and money</li>
+                          <li>Businesses may use video conference calls to create more customised interactions with their customers.</li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+             
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div >
+          <p><i class="fa fa-copyright"></i> Copyright 2021 by Viconnect</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+     
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+   
+  } else {
+    x.style.display = "block";
+    
+  }
+}
+  </script>
+
+</body>
+
+</html>
