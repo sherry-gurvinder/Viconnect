@@ -11,7 +11,7 @@ function validate()
     var MOBILE = document.getElementById("MOBILE");
     var ConfirmPassport = document.getElementById("c-password");
     flag = 0;
-    debugger;
+    
     
     
    
@@ -113,12 +113,25 @@ function validate()
     }
     else
     {
-        store();
+        if(store())
+        {
+        return true;
+        }
+        else
+        {
+        return false;
+        }
     }
     
    
 } 
 function store(){
+    debugger
+
+    window.navigate("Login.html");
+      
+
+  
   
         //var inputUsername= $("#username").val();
        var inputEmail= $("#email").val();
@@ -128,6 +141,7 @@ function store(){
     
     if(retrievedObject == null)
     {
+        
        
        
        var obj =
@@ -139,9 +153,12 @@ function store(){
        
        localStorage.setItem(inputEmail, JSON.stringify(obj));
        alert("Account has been created!")
-       window.location.href = "login.html";
+       return true;
+      
        }
        else{ alert("Email already Exist");}
+
+       return false;
       }
 
 function IsEMAILVALID() {

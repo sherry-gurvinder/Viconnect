@@ -5,14 +5,14 @@ function validate()
     var email = $("#email").val();
     var pass = $("#password").val();
     flag = 0;
-   
     
     
-   
-    if(email.value == "")
+    
+   debugger
+    if(email == "")
     {
         document.getElementById("email-msg").innerHTML = "Email is required";
-        email.style.border = " solid #f39c12";
+        $("#email").css("border", "solid #f39c12");
         flag = 0;
     }
     else
@@ -26,15 +26,15 @@ function validate()
         else
         {
             document.getElementById("email-msg").innerHTML = "Invalid Email Address";
-            //$("#email").style.border = " solid #f39c12";
+            $("#email").css("border", "solid #f39c12");
             flag = 0;
-            return false;
+           
         }
         
         
     }  
 
-    if(pass.value == "")
+    if(pass== "")
     {
         document.getElementById("password-msg").innerHTML = "Password is required";
         document.getElementById("password").style.border = " solid #f39c12";
