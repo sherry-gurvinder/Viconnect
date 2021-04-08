@@ -68,6 +68,7 @@ function sendemail(emailid)
         Body: $('#emailTemplate').html(),
       })
         .then(function (message) {
+          window.location.href = "https://sherry-gurvinder.github.io/videocallstart/";
         alert("mail sent successfully")
         });
       
