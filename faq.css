@@ -200,4 +200,19 @@ a.menu-link { display: none; }
           border: 0;
         }
       }
-    }    
+    }
+    /* Header */
+
+@media screen and (max-width: 1050px) {
+    .main-header .logo {
+        padding-left: 30px!important;
+    }
+  
+    .main-menu {
+        padding-right: 30px!important;
+    }
+  
+    .main-menu li {
+        margin-left: 5px!important;
+    }
+  }    
