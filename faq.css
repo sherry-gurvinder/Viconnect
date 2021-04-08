@@ -107,3 +107,29 @@ c12
         color: #FC3;
         text-decoration: none;
     }
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+    
+    p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+/* Buttons */
+
+.main-button p {
+    background-color: #f5a425;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+}
+
+a.menu-link { display: none; }
+    
